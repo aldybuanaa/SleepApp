@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="SleepApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="ZvV-3Q-XlZ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_meditation" translatesAutoresizingMaskIntoConstraints="NO" id="ei0-1N-AIi">
+                                <rect key="frame" x="68.666666666666686" y="298" width="253" height="248"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cvl-Th-5k6">
+                                <rect key="frame" x="104.66666666666667" y="127.66666666666669" width="180.66666666666663" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-Ds-yVC">
+                                        <rect key="frame" x="25.333333333333329" y="0.0" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to Silent Moon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt8-EE-f3G">
+                                        <rect key="frame" x="0.0" y="35.999999999999986" width="180.66666666666666" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the app,  Find some peace of mind to prepare for meditation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-AV-m1S">
+                                <rect key="frame" x="40" y="219.66666666666666" width="310" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHw-UQ-gbd">
+                                <rect key="frame" x="20" y="742" width="350" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Pr7-Mh-cYt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.01176470588" green="0.090196078430000007" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET STARTED">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="StartedButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iA3-yh-uk5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.55686274509803924" green="0.59215686274509804" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZHw-UQ-gbd" secondAttribute="trailing" constant="20" id="35z-l8-cxJ"/>
+                            <constraint firstItem="ei0-1N-AIi" firstAttribute="top" secondItem="ebS-AV-m1S" secondAttribute="bottom" constant="40" id="ArU-ZO-OR4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ebS-AV-m1S" secondAttribute="trailing" constant="40" id="CtI-yP-V2d"/>
+                            <constraint firstItem="ZvV-3Q-XlZ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="NZL-fB-YYU"/>
+                            <constraint firstItem="Cvl-Th-5k6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="O5v-Dn-s69"/>
+                            <constraint firstAttribute="trailing" secondItem="ZvV-3Q-XlZ" secondAttribute="trailing" id="Rlf-8C-lnD"/>
+                            <constraint firstItem="ei0-1N-AIi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TE9-rN-mA5"/>
+                            <constraint firstItem="Cvl-Th-5k6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WXC-X1-CH9"/>
+                            <constraint firstItem="ei0-1N-AIi" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" priority="250" id="WxT-na-BPj"/>
+                            <constraint firstItem="ebS-AV-m1S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="Y0F-mq-aO5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ZHw-UQ-gbd" secondAttribute="bottom" constant="20" id="efu-gT-TAH"/>
+                            <constraint firstItem="ZHw-UQ-gbd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="j53-65-R2M"/>
+                            <constraint firstAttribute="bottom" secondItem="ZvV-3Q-XlZ" secondAttribute="bottom" id="w4B-Qa-Vut"/>
+                            <constraint firstItem="ZvV-3Q-XlZ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="wQP-3T-kQE"/>
+                            <constraint firstItem="ebS-AV-m1S" firstAttribute="top" secondItem="Cvl-Th-5k6" secondAttribute="bottom" constant="20" id="y1j-hR-sBY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startedButton" destination="ZHw-UQ-gbd" id="MGd-pe-O6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_welcome" width="452" height="978"/>
+        <image name="img_meditation" width="253" height="248"/>
+    </resources>
+</document>
