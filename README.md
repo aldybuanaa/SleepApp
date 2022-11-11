@@ -9,7 +9,7 @@ SleepApp is an iOS application for the better sleep. This application project wa
 
 # Work Plan
 
-the following are some of the features of the FoodPin application made using Swift, UIKit, Storyboard:
+the following are some of the features of the SleepApp application made using Swift, UIKit, Storyboard:
  
 - Welcome Page
 - Menu using TableView
